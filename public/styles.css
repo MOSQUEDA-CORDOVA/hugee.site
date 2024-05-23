@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Buttershine Serif';
+    src: url('ButtershineSerif.woff2') format('woff2'),
+         url('ButtershineSerif.woff') format('woff'),
+         url('ButtershineSerif.otf') format('opentype'),
+         url('ButtershineSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h1{
+    font-family: 'Buttershine Serif';
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
 body, input, button{
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
@@ -6,13 +22,23 @@ body, input, button{
   font-size: 20px;
   margin: 0;
 }
-
+input, button{
+    border-radius: 8px;
+    border: 0px;
+    min-height: 40px;
+    padding: 8px;
+    background-color: #eee;
+}
+button{
+    cursor: pointer;
+}
+input:focus {
+    outline: none;
+    border: 0;
+  }
 body{
     padding-top: 32px;
     color: #666;
-}
-h1{
-    font-size: 38px;
 }
 a{
     color: #000;
@@ -36,12 +62,21 @@ a{
 .justify-content-center{
     justify-content:center;
 }
+.align-items-center{
+    align-items: center;
+}
 .mw-body{
     max-width: 1260px;
     width: 100%;
 }
+.bg-black{
+    background-color: #000;
+    color: #fff;
+}
 .right{
     flex: 1; 
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .publicidad{
     background-color: #eee;
@@ -54,6 +89,9 @@ a{
 }
 .fw-bold{
     font-weight: bold;
+}
+.w-100{
+    width: 100%;
 }
 .text-center{
     text-align: center;
@@ -92,6 +130,12 @@ a{
     }
 }
 @media (orientation: landscape) {
+    .menu-principal{
+        margin-left: 8px;
+    }
+    .right{
+        margin-right: 8px;
+    }
     .menu-principal > div{
         border: 1px solid #eee;
         position: sticky;
@@ -99,25 +143,38 @@ a{
         max-height: 80vh;
         padding: 8px;
         border-radius: 8px;
+        min-width: 280px;
     }
     .novedades{
+        display: none;
+    }
+    
+}
+@media (min-width:1080px) and (orientation: landscape) {
+    .novedades{
         border: 1px solid #eee;
-        min-width: 300px;
+        min-width: 280px;
         border-radius: 8px;
         padding: 8px;
+        display: block;
     }
- }
-
+}
 .buscador-ofertas{
     background-color: #fff;
     position: sticky;
     top: 0px;
     padding-top: 8px;
     display: flex;
-    gap: 8px;
+    gap: 0px;
+}
+.buscador-ofertas button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 .buscador-ofertas input{
     flex-grow: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .brand-title{
     margin: 16px 0;
