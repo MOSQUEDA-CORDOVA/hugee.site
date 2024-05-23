@@ -37,7 +37,6 @@ input:focus {
     border: 0;
   }
 body{
-    padding-top: 32px;
     color: #666;
 }
 a{
@@ -50,11 +49,17 @@ a{
     display: flex;
     gap: 8px;
 }
+.gap-0{
+    gap: 0;
+}
 .d-none{
     display: none !important;
 }
 .flex-direction-row-reverse{
     flex-direction: row-reverse;
+}
+.flex-direction-column{
+    flex-direction: column;
 }
 .justify-content-space-between{
     justify-content: space-between;
@@ -75,7 +80,6 @@ a{
 }
 .right{
     flex: 1; 
-    padding-left: 8px;
     padding-right: 8px;
 }
 .publicidad{
@@ -106,9 +110,22 @@ a{
     margin: 0;
 }
 @media (orientation: portrait) {
+    .sidebar-accion{
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 10000;
+        padding-top: 8px;
+        width: 38px;
+        display: flex;
+        align-items: center;
+        height: 48px;
+        padding-left: 4px;
+    }
    .d-portrait-none{
-    display: none !important;
+    display: none;
    }
+
    .menu-principal > div{
     position: fixed;
     top: 0px;
@@ -118,7 +135,7 @@ a{
     height: 100%;
     z-index: 999;
     box-sizing: border-box;
-    left: 0;
+    left: -1000px;
     }
     .menu-principal .item{
         max-width: 500px;
@@ -128,8 +145,23 @@ a{
     .novedades{
         display: none;
     }
+    .right{
+        margin-top: 32px;
+    }
+    .buscador-ofertas input{
+        margin-left: 32px;
+    }
+    .buscador-ofertas{
+        padding-bottom: 8px;
+    }
 }
 @media (orientation: landscape) {
+    body{
+        padding-top: 32px;
+    }
+    .d-landscape-none{
+        display: none;
+    }
     .menu-principal{
         margin-left: 8px;
     }
@@ -196,9 +228,28 @@ a{
 .d-block{
     display: block;
 }
-.ofertas-empleo{
+.flex-grow-1{
     flex-grow: 1;
 }
 .margin-top-32px{
     margin-top: 32px;
+}
+.card{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    padding-right: 8px;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.absolute{
+    position: absolute;
+}
+.sidebar-toggle{
+    display: none;
+}
+
+.sidebar-toggle:checked + .menu-principal > div {
+    left: 0;
 }
