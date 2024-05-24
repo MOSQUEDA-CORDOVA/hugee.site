@@ -180,6 +180,9 @@ a{
     .novedades{
         display: none;
     }
+    .align-landscape-items-center{
+        align-items: center;
+    }
     
 }
 @media (min-width:1080px) and (orientation: landscape) {
