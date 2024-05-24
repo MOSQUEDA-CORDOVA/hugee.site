@@ -26,7 +26,7 @@ input, button{
     border-radius: 8px;
     border: 0px;
     min-height: 40px;
-    padding: 8px;
+    padding: 8px 16px;
     background-color: #eee;
 }
 button{
@@ -40,17 +40,21 @@ body{
     color: #666;
 }
 a{
-    color: #000;
+    color: #666;
     text-decoration: none;
-    font-weight: 600;
 }
-
+.card a{
+    color: #333;
+}
 .d-flex{
     display: flex;
     gap: 8px;
 }
 .gap-0{
     gap: 0;
+}
+.gap-32{
+    gap: 32px;
 }
 .d-none{
     display: none !important;
@@ -71,7 +75,7 @@ a{
     align-items: center;
 }
 .mw-body{
-    max-width: 1260px;
+    max-width: 1360px;
     width: 100%;
 }
 .bg-black{
@@ -81,6 +85,15 @@ a{
 .right{
     flex: 1; 
     padding-right: 8px;
+}
+.pr-8{
+    padding-right: 8px;
+}
+.bt-1{
+    border-top: 1px solid #eee;
+}
+.pt-16{
+    padding-top: 16px;
 }
 .publicidad{
     background-color: #eee;
@@ -109,6 +122,95 @@ a{
 .m-0{
     margin: 0;
 }
+.buscador-ofertas{
+    background-color: #fff;
+    position: sticky;
+    top: 0px;
+    padding-top: 8px;
+    display: flex;
+    gap: 0px;
+    z-index: 100;
+    padding-bottom: 8px;
+}
+.buscador-ofertas button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.buscador-ofertas input{
+    flex-grow: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.brand-title{
+    margin: 16px 0;
+    letter-spacing: 8px;
+    font-size: 14px;
+}
+
+.menu-principal .item{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 16px;
+    margin-bottom: 8px;
+    min-width: 200px;
+
+}
+.copy-owner{
+    font-size: 14px;
+}
+.d-block{
+    display: block;
+}
+.flex-grow-1{
+    flex-grow: 1;
+}
+.margin-top-32px{
+    margin-top: 32px;
+}
+.card{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.absolute{
+    position: absolute;
+}
+.sidebar-toggle{
+    display: none;
+}
+
+.sidebar-toggle:checked + .menu-principal > div {
+    left: 0;
+}
+.card-acciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-join{
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin: 16px 0;
+    text-align: left;
+    padding: 4px 16px;
+}
+.btn-join svg{
+    vertical-align: -4px;
+}
+.fw-normal{
+    font-weight: normal;
+}
+.text-luz{
+    color: #666;
+}
+.icon-luz{
+    color: #999;
+}
+
 @media (orientation: portrait) {
     .sidebar-accion{
         position: sticky;
@@ -152,9 +254,6 @@ a{
     }
     .buscador-ofertas input{
         margin-left: 32px;
-    }
-    .buscador-ofertas{
-        padding-bottom: 8px;
     }
 
 }
@@ -200,87 +299,13 @@ a{
     }
     
 }
-.buscador-ofertas{
-    background-color: #fff;
-    position: sticky;
-    top: 0px;
-    padding-top: 8px;
-    display: flex;
-    gap: 0px;
-}
-.buscador-ofertas button{
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-.buscador-ofertas input{
-    flex-grow: 1;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-.brand-title{
-    margin: 16px 0;
-    letter-spacing: 8px;
-    font-size: 14px;
+
+/*START EFFECTS */
+
+a:hover{
+    color: #000;
+    font-weight: bold;
+    transition: color 0.5s ease, font-weight 0.3s ease-in-out;
 }
 
-.menu-principal .item{
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 4px 16px;
-    margin-bottom: 8px;
-    min-width: 200px;
-
-}
-.copy-owner{
-    font-size: 14px;
-}
-.d-block{
-    display: block;
-}
-.flex-grow-1{
-    flex-grow: 1;
-}
-.margin-top-32px{
-    margin-top: 32px;
-}
-.card{
-    border-bottom: 1px solid #eee;
-    margin-bottom: 32px;
-    padding-bottom: 16px;
-    padding-right: 8px;
-}
-.mt-8{
-    margin-top: 8px;
-}
-.absolute{
-    position: absolute;
-}
-.sidebar-toggle{
-    display: none;
-}
-
-.sidebar-toggle:checked + .menu-principal > div {
-    left: 0;
-}
-.card-acciones{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.btn-join{
-    border: 1px solid #000;
-    border-radius: 8px;
-    margin: 16px 0;
-    text-align: left;
-    padding: 4px 8px;
-}
-.btn-join svg{
-    vertical-align: -4px;
-}
-.fw-normal{
-    font-weight: normal;
-}
-.text-luz{
-    color: #666;
-}
+/* END EFFECTS*/
