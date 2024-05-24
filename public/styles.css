@@ -137,6 +137,7 @@ a{
     z-index: 999;
     box-sizing: border-box;
     left: -1000px;
+    transition: left 0.5s ease;
     }
     .menu-principal .item{
         max-width: 500px;
@@ -155,6 +156,7 @@ a{
     .buscador-ofertas{
         padding-bottom: 8px;
     }
+
 }
 @media (orientation: landscape) {
     body{
@@ -177,6 +179,7 @@ a{
         padding: 8px;
         border-radius: 8px;
         min-width: 280px;
+        max-width: 300px;
     }
     .novedades{
         display: none;
@@ -184,6 +187,7 @@ a{
     .align-landscape-items-center{
         align-items: center;
     }
+    
     
 }
 @media (min-width:1080px) and (orientation: landscape) {
@@ -194,6 +198,7 @@ a{
         padding: 8px;
         display: block;
     }
+    
 }
 .buscador-ofertas{
     background-color: #fff;
@@ -261,13 +266,21 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .btn-join{
     border: 1px solid #000;
     border-radius: 8px;
-    padding: 4px 8px;
     margin: 16px 0;
+    text-align: left;
+    padding: 4px 8px;
+}
+.btn-join svg{
+    vertical-align: -4px;
 }
 .fw-normal{
     font-weight: normal;
+}
+.text-luz{
+    color: #666;
 }
