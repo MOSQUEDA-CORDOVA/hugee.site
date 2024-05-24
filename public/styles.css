@@ -103,9 +103,6 @@ a{
     text-align: center;
     min-height: 50px;
     margin-bottom: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .fw-bold{
     font-weight: bold;
