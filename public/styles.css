@@ -85,7 +85,7 @@ a{
 .publicidad{
     background-color: #eee;
     text-align: center;
-    min-height: 100px;
+    min-height: 50px;
     margin-bottom: 16px;
     display: flex;
     justify-content: center;
@@ -252,4 +252,15 @@ a{
 
 .sidebar-toggle:checked + .menu-principal > div {
     left: 0;
+}
+.card-acciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-join{
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 4px 8px;
+    margin: 16px 0;
 }
