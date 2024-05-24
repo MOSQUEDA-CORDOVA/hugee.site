@@ -121,6 +121,7 @@ a{
         align-items: center;
         height: 48px;
         padding-left: 4px;
+        border-bottom-right-radius: 8px;
     }
    .d-portrait-none{
     display: none;
@@ -266,4 +267,7 @@ a{
     border-radius: 8px;
     padding: 4px 8px;
     margin: 16px 0;
+}
+.fw-normal{
+    font-weight: normal;
 }
