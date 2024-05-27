@@ -113,9 +113,6 @@ a{
 .text-center{
     text-align: center;
 }
-.font-weight-300{
-    font-weight: 300;
-}
 .text-black{
     color: #000;
 }
@@ -190,6 +187,14 @@ a{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    gap: 16px;
+    min-height: 60px;
+}
+.card-acciones svg:hover{
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 32px;
+    transition: padding 0.3s ease-in-out, background-color 0.2s ease-in-out;
 }
 .btn-join{
     border: 1px solid #000;
@@ -285,6 +290,9 @@ a{
     }
     .align-landscape-items-center{
         align-items: center;
+    }
+    .font-weight-landscape-300{
+        font-weight: 300;
     }
     
     
