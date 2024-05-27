@@ -240,6 +240,24 @@ a:hover{
 .label{
     margin: 16px 0 0 0;
 }
+.message {
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.5s ease-in-out,height 0.5s ease-in-out;
+}
+
+#error-message {
+    color: red;
+}
+
+#success-message {
+    color: green;
+}
+
+.show-message {
+    opacity: 1;
+}
+
 @media (orientation: portrait) {
     .sidebar-accion{
         position: sticky;
