@@ -25,7 +25,7 @@ body, input, button{
   font-size: 20px;
   margin: 0;
 }
-input, button{
+input, button, textarea, .btn{
     border-radius: 8px;
     border: 0px;
     min-height: 40px;
@@ -38,13 +38,19 @@ button{
 input:focus {
     outline: none;
     border: 0;
-  }
+}
+textarea{
+    min-height: 200px;
+}
 body{
     color: #666;
 }
 a{
     color: #666;
     text-decoration: none;
+}
+a:hover{
+    color: #000;
 }
 .card a{
     color: #333;
@@ -83,7 +89,17 @@ a{
 }
 .bg-black{
     background-color: #000;
+    color: #fff !important;
+}
+.bg-black:hover{
     color: #fff;
+}
+
+.border-top{
+    border-top: 1px solid #eee;
+}
+.ps-16px{
+    padding-left: 16px;
 }
 .right{
     flex: 1; 
@@ -215,7 +231,15 @@ a{
 .icon-luz{
     color: #999;
 }
-
+.box-sizing-border-box{
+    box-sizing: border-box;
+}
+.font-weight-300{
+    font-weight: 300;
+}
+.label{
+    margin: 16px 0 0 0;
+}
 @media (orientation: portrait) {
     .sidebar-accion{
         position: sticky;
@@ -294,7 +318,14 @@ a{
     .font-weight-landscape-300{
         font-weight: 300;
     }
-    
+    form{
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 16px;
+    }
+    .ps-landscape-16px{
+        padding-left: 16px;
+    }
     
 }
 @media (min-width:1080px) and (orientation: landscape) {
@@ -305,13 +336,14 @@ a{
         padding: 8px;
         display: block;
     }
-    
+    .form{
+        margin-right: 8px;
+    }
 }
 
 /*START EFFECTS */
 
 a:hover{
-    color: #000;
     font-weight: bold;
     transition: color 0.5s ease, font-weight 0.3s ease-in-out;
 }
