@@ -264,6 +264,7 @@ a:hover{
 }
 
 @media (orientation: portrait) {
+
     .sidebar-accion{
         position: sticky;
         top: 0;
@@ -290,7 +291,7 @@ a:hover{
     height: 100%;
     z-index: 999;
     box-sizing: border-box;
-    left: -1000px;
+    left: -2000px;
     transition: left 0.5s ease;
     }
     .menu-principal .item{
@@ -341,7 +342,7 @@ a:hover{
     .font-weight-landscape-300{
         font-weight: 300;
     }
-    form{
+    .form{
         border: 1px solid #eee;
         border-radius: 8px;
         padding: 16px;
@@ -362,6 +363,9 @@ a:hover{
     }
     .form{
         margin-right: 8px;
+    }
+    .buscador-ofertas{
+        border-bottom: 1px solid #eee;
     }
 }
 

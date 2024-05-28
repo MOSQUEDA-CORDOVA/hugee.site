@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hugee.site</title>
-    <link rel="stylesheet" href="styles.css?v=13">
+    <link rel="stylesheet" href="styles.css?v=15">
 
     <!-- Favicon -->
     <link rel="icon" href="Favicon-Hugee-Black-Fondo-White-100x100.png" sizes="32x32">
@@ -69,27 +69,19 @@
                 
             </header>
             <section>
-                <div class="buscador-ofertas">
-                    <input type="search" placeholder="Buscar oferta. . .">
-                    <button class="d-flex justify-content-center align-items-center">
+                <form id="searchForm" onsubmit="handleSearch(event)" class="buscador-ofertas">
+                    <input type="search" id="searchInput" placeholder="Buscar oferta. . .">
+                    <button type="submit" onclick="searchJobOffers()" class="d-flex justify-content-center align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M10 2A8 8 0 1014.59 16.56l4.7 4.7a1 1 0 101.41-1.41l-4.7-4.7A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
                     </button>
-                </div>
+                </form>
                 <section class="d-flex margin-top-32px gap-0">
                     <section class="ofertas-empleo flex-grow-1">
-
-                        <div class="card">
-                            <div class="pr-8 d-flex justify-content-space-between align-items-center">
-                                <h3 class="text-black m-0">Sorry, we working for you</h3>
-                                
-                            </div>
-                            <p class="mt-8 pr-8 font-weight-landscape-300">Website under construction, we will return soon! </p>
-                            
-                        </div>
-                        
-                        
+                        <div id="job-offers-container"></div>
+                        <div id="loader-simple" class="d-none text-center">Cargando...</div>
                     </section>
-                    <aside class="novedades d-none">
+                    
+                    <aside class="novedades">
                         <a href="new-offer.html" class="btn d-flex align-items-center bg-black w-100 box-sizing-border-box">
                             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor" ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2l.324 .001l.318 .004l.616 .017l.299 .013l.579 .034l.553 .046c4.785 .464 6.732 2.411 7.196 7.196l.046 .553l.034 .579c.005 .098 .01 .198 .013 .299l.017 .616l.005 .642l-.005 .642l-.017 .616l-.013 .299l-.034 .579l-.046 .553c-.464 4.785 -2.411 6.732 -7.196 7.196l-.553 .046l-.579 .034c-.098 .005 -.198 .01 -.299 .013l-.616 .017l-.642 .005l-.642 -.005l-.616 -.017l-.299 -.013l-.579 -.034l-.553 -.046c-4.785 -.464 -6.732 -2.411 -7.196 -7.196l-.046 -.553l-.034 -.579a28.058 28.058 0 0 1 -.013 -.299l-.017 -.616c-.003 -.21 -.005 -.424 -.005 -.642l.001 -.324l.004 -.318l.017 -.616l.013 -.299l.034 -.579l.046 -.553c.464 -4.785 2.411 -6.732 7.196 -7.196l.553 -.046l.579 -.034c.098 -.005 .198 -.01 .299 -.013l.616 -.017c.21 -.003 .424 -.005 .642 -.005zm0 6a1 1 0 0 0 -1 1v2h-2l-.117 .007a1 1 0 0 0 .117 1.993h2v2l.007 .117a1 1 0 0 0 1.993 -.117v-2h2l.117 -.007a1 1 0 0 0 -.117 -1.993h-2v-2l-.007 -.117a1 1 0 0 0 -.993 -.883z" fill="currentColor" stroke-width="0" /></svg>
                             Publicar oferta de empleo
@@ -134,7 +126,7 @@
                     Unete a nuestro whatsapp
                 </a>
                 <div class="item d-none">Freelancers</div>
-<a href="#" class="item d-flex align-items-center text-luz fw-normal d-none">
+                <a href="#" class="item d-flex align-items-center text-luz fw-normal d-none">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 8m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" /><path d="M12 8l0 13" /><path d="M19 12v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-7" /><path d="M7.5 8a2.5 2.5 0 0 1 0 -5a4.8 8 0 0 1 4.5 5a4.8 8 0 0 1 4.5 -5a2.5 2.5 0 0 1 0 5" /></svg>                    
                     Gifts
                 </a>
@@ -158,7 +150,7 @@
         </nav>
     </section>
     
-    <script src="app.js?v=13"></script>
+    <script src="temporal.js?v=15"></script>
     
 </body>
 </html>

@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hugee.site</title>
-    <link rel="stylesheet" href="styles.css?v=13">
+    <link rel="stylesheet" href="styles.css?v=15">
 
     <!-- Favicon -->
     <link rel="icon" href="Favicon-Hugee-Black-Fondo-White-100x100.png" sizes="32x32">
@@ -69,16 +69,16 @@
                 
             </header>
             <section>
-                <div class="buscador-ofertas">
-                    <input type="search" placeholder="Buscar oferta. . .">
-                    <button class="d-flex justify-content-center align-items-center">
+                <form id="searchForm" onsubmit="handleSearch(event)" class="buscador-ofertas">
+                    <input type="search" id="searchInput" placeholder="Buscar oferta. . .">
+                    <button type="submit" onclick="searchJobOffers()" class="d-flex justify-content-center align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M10 2A8 8 0 1014.59 16.56l4.7 4.7a1 1 0 101.41-1.41l-4.7-4.7A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
                     </button>
-                </div>
+                </form>
                 <section class="d-flex margin-top-32px gap-0">
                     <section class="ofertas-empleo flex-grow-1">
                         <div id="job-offers-container"></div>
-                        <div id="loader-simple" class="d-none">Cargando...</div>
+                        <div id="loader-simple" class="d-none text-center">Cargando...</div>
                     </section>
                     
                     <aside class="novedades">
@@ -150,7 +150,7 @@
         </nav>
     </section>
     
-    <script src="app.js?v=13"></script>
+    <script src="app.js?v=15"></script>
     
 </body>
 </html>
