@@ -67,7 +67,7 @@ function loadMoreJobOffers() {
 
         // Añadir los botones al div de acciones
         //accionesDiv.appendChild(btnAprobar);
-        accionesDiv.appendChild(btnEliminar);
+        //accionesDiv.appendChild(btnEliminar);
 
         // Añadir el div de acciones al elemento de la oferta de empleo
         cardHeader.appendChild(accionesDiv);
@@ -216,7 +216,7 @@ function searchJobOffers() {
 
                 // Añadir los botones al div de acciones
                 //accionesDiv.appendChild(btnAprobar);
-                accionesDiv.appendChild(btnEliminar);
+                //accionesDiv.appendChild(btnEliminar);
         
                 // Añadir el div de acciones al elemento de la oferta de empleo
                 cardHeader.appendChild(accionesDiv);
