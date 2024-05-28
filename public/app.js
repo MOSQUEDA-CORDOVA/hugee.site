@@ -18,6 +18,20 @@ document.getElementById('new-offer').addEventListener('submit', function(event) 
         return;
     }
 
+    // Validar que el número de WhatsApp incluya el código de área
+    var whatsappRegex = /^\d{7,15}$/; // Ajusta la expresión regular según el formato esperado
+    if (whatsapp && !whatsappRegex.test(whatsapp)) {
+
+        var error ='Error: Debes proporcionar el código de area de WhatsApp ';
+        console.error(error);
+        var successMessage = document.getElementById('success-message');
+        successMessage.classList.remove('show-message');
+        var errorMessage = document.getElementById('error-message');
+        errorMessage.innerText = error;
+        errorMessage.classList.add('show-message');
+        return;
+    }
+
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://back.hugee.site/api/job-offers', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
@@ -65,3 +79,5 @@ document.getElementById('new-offer').addEventListener('submit', function(event) 
     });
     xhr.send(data);
 });
+
+
