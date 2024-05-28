@@ -15,6 +15,7 @@ document.getElementById('new-offer').addEventListener('submit', function(event) 
         var errorMessage = document.getElementById('error-message');
         errorMessage.innerText = error;
         errorMessage.classList.add('show-message');
+        errorMessage.scrollIntoView({ behavior: 'smooth' });
         return;
     }
 
@@ -22,13 +23,14 @@ document.getElementById('new-offer').addEventListener('submit', function(event) 
     var whatsappRegex = /^\d{7,15}$/; // Ajusta la expresión regular según el formato esperado
     if (whatsapp && !whatsappRegex.test(whatsapp)) {
 
-        var error ='Error: Debes proporcionar el código de area de WhatsApp ';
+        var error ='Error: Debes proporcionar el código de area de WhatsApp sin caracteres especiales ';
         console.error(error);
         var successMessage = document.getElementById('success-message');
         successMessage.classList.remove('show-message');
         var errorMessage = document.getElementById('error-message');
         errorMessage.innerText = error;
         errorMessage.classList.add('show-message');
+        errorMessage.scrollIntoView({ behavior: 'smooth' });
         return;
     }
 
@@ -46,11 +48,12 @@ document.getElementById('new-offer').addEventListener('submit', function(event) 
                 var errorMessage = document.getElementById('error-message');
                 errorMessage.classList.remove('show-message');
                 var successMessage = document.getElementById('success-message');
-                successMessage.innerText = message + "Será redirigido al listado de ofertas. . .";
+                successMessage.innerText = message + ". Será redirigido. . .";
                 successMessage.classList.add('show-message');
+                successMessage.scrollIntoView({ behavior: 'smooth' });
                 // Publicación exitosa, redirigir a las ofertas
                 setTimeout(function() {
-                    window.location.href = 'index.html';
+                    window.location.href = 'msj-evaluation.html';
                 }, 3000); 
                 
             } else {
@@ -66,7 +69,7 @@ document.getElementById('new-offer').addEventListener('submit', function(event) 
                 var errorMessage = document.getElementById('error-message');
                 errorMessage.innerText = message + ': ' + error;
                 errorMessage.classList.add('show-message');
-                // Aquí podrías mostrar un mensaje de error al usuario
+                errorMessage.scrollIntoView({ behavior: 'smooth' });
             }
         }
     };

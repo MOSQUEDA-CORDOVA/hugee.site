@@ -243,7 +243,7 @@ a:hover{
 .message {
     opacity: 0;
     height: 0;
-    transition: opacity 0.5s ease-in-out,height 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out,height 0.5s ease-in-out,margin-top 0.5s ease-in-out;
 }
 
 #error-message {
@@ -255,7 +255,9 @@ a:hover{
 }
 
 .show-message {
+    margin-top: 32px;
     opacity: 1;
+    height: auto;
 }
 
 @media (orientation: portrait) {
