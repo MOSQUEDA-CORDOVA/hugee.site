@@ -84,7 +84,7 @@ function loadMoreJobOffers() {
         if (jobOffer.whatsapp) {
             const whatsappLink = document.createElement('a');
             whatsappLink.href = `https://api.whatsapp.com/send?phone=${jobOffer.whatsapp}`;
-            whatsappLink.textContent = 'WhatsApp';
+            whatsappLink.textContent = '☎️ WhatsApp';
             whatsappLink.target = '_blank';
             contactElement.appendChild(whatsappLink);
         }
@@ -92,7 +92,7 @@ function loadMoreJobOffers() {
         if (jobOffer.mail) {
             const mailLink = document.createElement('a');
             mailLink.href = `mailto:${jobOffer.mail}`;
-            mailLink.textContent = 'Correo';
+            mailLink.textContent = '✉️ Correo';
             contactElement.appendChild(mailLink);
         }
 
@@ -107,7 +107,7 @@ function loadMoreJobOffers() {
             allJobOffersLoaded = true;
             const endMessageElement = document.createElement('p');
             if(!endMessageDisplayed){
-                endMessageElement.textContent = 'No hay más ofertas disponibles';
+                endMessageElement.textContent = 'No hay más ofertas disponibles, pronto publicaremos mas ofertas 😃';
                 endMessageDisplayed = true;
             }
             
@@ -233,7 +233,7 @@ function searchJobOffers() {
                 if (jobOffer.whatsapp) {
                     const whatsappLink = document.createElement('a');
                     whatsappLink.href = `https://api.whatsapp.com/send?phone=${jobOffer.whatsapp}`;
-                    whatsappLink.textContent = 'WhatsApp';
+                    whatsappLink.textContent = '☎️ WhatsApp';
                     whatsappLink.target = '_blank';
                     contactElement.appendChild(whatsappLink);
                 }
@@ -241,7 +241,7 @@ function searchJobOffers() {
                 if (jobOffer.mail) {
                     const mailLink = document.createElement('a');
                     mailLink.href = `mailto:${jobOffer.mail}`;
-                    mailLink.textContent = 'Correo';
+                    mailLink.textContent = '✉️ Correo';
                     contactElement.appendChild(mailLink);
                 }
         
