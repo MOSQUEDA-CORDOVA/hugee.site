@@ -23,7 +23,7 @@ document.getElementById('new-offer').addEventListener('submit', function(event) 
     var whatsappRegex = /^\d{7,15}$/; // Ajusta la expresión regular según el formato esperado
     if (whatsapp && !whatsappRegex.test(whatsapp)) {
 
-        var error ='Error: Debes proporcionar el código de area de WhatsApp sin caracteres especiales ';
+        var error ='Error: Debes proporcionar el código de area de WhatsApp sin espacios ni caracteres especiales ';
         console.error(error);
         var successMessage = document.getElementById('success-message');
         successMessage.classList.remove('show-message');
