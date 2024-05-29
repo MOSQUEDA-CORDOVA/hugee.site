@@ -390,3 +390,7 @@ margin-bottom: 10px;}
 ins.publicidad[data-ad-status='unfilled'] {
 display: none !important;
 }
+
+.btn-link{
+    cursor: pointer;
+}

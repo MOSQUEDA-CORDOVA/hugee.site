@@ -74,9 +74,26 @@ function loadMoreJobOffers() {
         jobOfferElement.appendChild(cardHeader);
 
         const descriptionElement = document.createElement('p');
-        descriptionElement.textContent = jobOffer.description;
+        const fullDescription = jobOffer.description;
+        const shortDescription = fullDescription.length > 100 ? fullDescription.substring(0, 100) + '...' : fullDescription;
+        descriptionElement.textContent = shortDescription;
         descriptionElement.classList.add('mt-0','pr-8', 'font-weight-landscape-300');
         jobOfferElement.appendChild(descriptionElement);
+        if (fullDescription.length > 100) {
+            const readMoreButton = document.createElement('span');
+            readMoreButton.textContent = 'Read more';
+            readMoreButton.classList.add('btn-link', 'fw-bold');
+            readMoreButton.addEventListener('click', () => {
+                if (readMoreButton.textContent === 'Read more') {
+                    descriptionElement.textContent = fullDescription;
+                    readMoreButton.textContent = 'Read less';
+                } else {
+                    descriptionElement.textContent = shortDescription;
+                    readMoreButton.textContent = 'Read more';
+                }
+            });
+            descriptionElement.appendChild(readMoreButton);
+        }
 
         const contactElement = document.createElement('div');
         contactElement.classList.add('d-flex', 'gap-32', 'bt-1', 'pt-16');
@@ -223,9 +240,26 @@ function searchJobOffers() {
                 jobOfferElement.appendChild(cardHeader);
         
                 const descriptionElement = document.createElement('p');
-                descriptionElement.textContent = jobOffer.description;
+                const fullDescription = jobOffer.description;
+                const shortDescription = fullDescription.length > 100 ? fullDescription.substring(0, 100) + '...' : fullDescription;
+                descriptionElement.textContent = shortDescription;
                 descriptionElement.classList.add('mt-0','pr-8', 'font-weight-landscape-300');
                 jobOfferElement.appendChild(descriptionElement);
+                if (fullDescription.length > 100) {
+                    const readMoreButton = document.createElement('span');
+                    readMoreButton.textContent = 'Read more';
+                    readMoreButton.classList.add('btn-link', 'fw-bold');
+                    readMoreButton.addEventListener('click', () => {
+                        if (readMoreButton.textContent === 'Read more') {
+                            descriptionElement.textContent = fullDescription;
+                            readMoreButton.textContent = 'Read less';
+                        } else {
+                            descriptionElement.textContent = shortDescription;
+                            readMoreButton.textContent = 'Read more';
+                        }
+                    });
+                    jobOfferElement.appendChild(readMoreButton);
+                }
         
                 const contactElement = document.createElement('div');
                 contactElement.classList.add('d-flex', 'gap-32', 'bt-1', 'pt-16');
