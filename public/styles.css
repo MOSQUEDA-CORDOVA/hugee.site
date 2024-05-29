@@ -118,7 +118,7 @@ a:hover{
     background-color: #eee;
     text-align: center;
     min-height: 50px;
-    margin-bottom: 16px;
+    margin-top: 16px;
 }
 .fw-bold{
     font-weight: bold;
@@ -377,3 +377,16 @@ a:hover{
 }
 
 /* END EFFECTS*/
+
+/* el nombre correcto de la etqieuta es adsbygoogle */
+.publicidad {margin-bottom: 50px;}
+.publicidad::before {
+content: "Anuncio";
+display: block;
+text-align: center;
+font-weight: bold;
+margin-bottom: 10px;}
+
+ins.publicidad[data-ad-status='unfilled'] {
+display: none !important;
+}
