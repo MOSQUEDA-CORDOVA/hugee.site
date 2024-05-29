@@ -355,7 +355,7 @@ a:hover{
 @media (min-width:1080px) and (orientation: landscape) {
     .novedades{
         border: 1px solid #eee;
-        min-width: 280px;
+        min-width: 380px;
         max-width: 380px;
         border-radius: 8px;
         padding: 8px;
