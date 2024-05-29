@@ -258,8 +258,7 @@ function searchJobOffers() {
                             readMoreButton.textContent = 'Read more';
                         }
                     });
-                    jobOfferElement.appendChild(readMoreButton);
-                }
+                    descriptionElement.appendChild(readMoreButton);
         
                 const contactElement = document.createElement('div');
                 contactElement.classList.add('d-flex', 'gap-32', 'bt-1', 'pt-16');
