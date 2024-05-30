@@ -394,3 +394,6 @@ display: none !important;
 .btn-link{
     cursor: pointer;
 }
+header h2{
+    max-width: 650px;
+}
