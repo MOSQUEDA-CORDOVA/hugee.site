@@ -8,7 +8,7 @@ document.getElementById('new-offer').addEventListener('submit', function(event) 
 
      // Validar que al menos uno de los campos email o whatsapp esté lleno
      if (!whatsapp && !mail) {
-        var error ='Error: Debes proporcionar al menos un número de WhatsApp o una dirección de correo electrónico.';
+        var error ='Error: You must provide at least one WhatsApp number or email address.';
         console.error(error);
         var successMessage = document.getElementById('success-message');
         successMessage.classList.remove('show-message');
@@ -23,7 +23,7 @@ document.getElementById('new-offer').addEventListener('submit', function(event) 
     var whatsappRegex = /^\d{7,15}$/; // Ajusta la expresión regular según el formato esperado
     if (whatsapp && !whatsappRegex.test(whatsapp)) {
 
-        var error ='Error: Debes proporcionar el código de area de WhatsApp sin espacios ni caracteres especiales ';
+        var error ='Error: You must provide the WhatsApp area code without spaces or special characters ';
         console.error(error);
         var successMessage = document.getElementById('success-message');
         successMessage.classList.remove('show-message');
@@ -59,10 +59,10 @@ document.getElementById('new-offer').addEventListener('submit', function(event) 
             } else {
                 var response = JSON.parse(xhr.responseText);
                 var error = response.error;
-                var errors = response.errors || 'Error no identificado.';
-                var message = response.message || 'Ocurrió un error al procesar la solicitud.';
+                var errors = response.errors || 'Unidentified error.';
+                var message = response.message || 'An error occurred while processing the request.';
                 console.error('Error:', error);
-                console.error('Detalles del error:', errors);
+                console.error('Error details:', errors);
                 console.error('Message:', message);
                 var successMessage = document.getElementById('success-message');
                 successMessage.classList.remove('show-message');

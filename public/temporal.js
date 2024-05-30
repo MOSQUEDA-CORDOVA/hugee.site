@@ -13,7 +13,7 @@ function loadMoreJobOffers() {
     fetch(`https://back.hugee.site/api/job-offers?page=${page}&perPage=${perPage}`)
     .then(response => {
         if (!response.ok) {
-        throw new Error('Error al obtener las ofertas de empleo');
+        throw new Error('Error when obtaining job offers');
         }
         return response.json();
     })
@@ -109,7 +109,7 @@ function loadMoreJobOffers() {
         if (jobOffer.mail) {
             const mailLink = document.createElement('a');
             mailLink.href = `mailto:${jobOffer.mail}`;
-            mailLink.textContent = '✉️ Correo';
+            mailLink.textContent = '✉️ Mail';
             contactElement.appendChild(mailLink);
         }
 
@@ -124,7 +124,7 @@ function loadMoreJobOffers() {
             allJobOffersLoaded = true;
             const endMessageElement = document.createElement('p');
             if(!endMessageDisplayed){
-                endMessageElement.textContent = 'No hay más ofertas disponibles, pronto publicaremos mas ofertas 😃';
+                endMessageElement.textContent = 'There are no more offers available, we will publish more offers soon 😃';
                 endMessageDisplayed = true;
             }
             
@@ -178,8 +178,8 @@ function searchJobOffers() {
         fetch(`https://back.hugee.site/api/job-offers/search?query=${searchQuery}`)
             .then(response => {
                 if (!response.ok) {
-                    loaderSimple.textContent="Error al buscar ¡pronto agregaremos más ofertas!";
-                    throw new Error('Error al buscar ofertas de empleo');
+                    loaderSimple.textContent="Search error We will add more offers soon!";
+                    throw new Error('Error when searching for job offers');
                 }
                 return response.json();
             })
@@ -275,7 +275,7 @@ function searchJobOffers() {
                 if (jobOffer.mail) {
                     const mailLink = document.createElement('a');
                     mailLink.href = `mailto:${jobOffer.mail}`;
-                    mailLink.textContent = '✉️ Correo';
+                    mailLink.textContent = '✉️ Mail';
                     contactElement.appendChild(mailLink);
                 }
         
@@ -307,7 +307,7 @@ function deleteJobOffer(id, jobOfferElement) {
     })
     .then(response => {
         if (!response.ok) {
-            throw new Error('Error al eliminar la oferta de empleo');
+            throw new Error('Error deleting job offer');
         }
         // Eliminar el elemento del DOM
         jobOfferElement.remove();
@@ -315,6 +315,6 @@ function deleteJobOffer(id, jobOfferElement) {
     .catch(error => {
         console.error('Error:', error.message);
         // Manejar el error en caso de que ocurra
-        alert('Error al eliminar la oferta de empleo. Inténtalo de nuevo más tarde.');
+        alert('Error deleting job offer. Try again later.');
     });
 }

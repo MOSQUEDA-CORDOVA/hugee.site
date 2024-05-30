@@ -381,7 +381,7 @@ a:hover{
 /* el nombre correcto de la etqieuta es adsbygoogle */
 .publicidad {margin-bottom: 50px;}
 .publicidad::before {
-content: "Anuncio";
+content: "Advertisement";
 display: block;
 text-align: center;
 font-weight: bold;
