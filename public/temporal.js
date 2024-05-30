@@ -92,7 +92,7 @@ function loadMoreJobOffers() {
                     readMoreButton.textContent = 'Read more';
                 }
             });
-            jobOfferElement.appendChild(readMoreButton);
+            descriptionElement.appendChild(readMoreButton);
         }
 
         const contactElement = document.createElement('div');
