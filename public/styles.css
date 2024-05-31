@@ -358,7 +358,7 @@ a:hover{
         padding: 8px;
         border-radius: 8px;
         min-width: 280px;
-        max-width: 300px;
+        max-width: 380px; /*por los anuncios se desbordan*/
     }
     .novedades{
         display: none;
