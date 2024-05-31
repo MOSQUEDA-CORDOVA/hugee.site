@@ -7,6 +7,9 @@
     font-weight: normal;
     font-style: normal;
 }
+*{
+    box-sizing: border-box;
+}
 h1{
     font-family: 'Buttershine Serif';
     font-size: 48px;
@@ -68,17 +71,15 @@ a:hover{
 .d-none{
     display: none !important;
 }
-.flex-direction-row-reverse{
-    flex-direction: row-reverse;
-}
-.flex-direction-column{
-    flex-direction: column;
-}
+
 .justify-content-space-between{
     justify-content: space-between;
 }
 .justify-content-center{
     justify-content:center;
+}
+.justify-content-end{
+    justify-content: end;
 }
 .align-items-center{
     align-items: center;
@@ -101,10 +102,7 @@ a:hover{
 .ps-16px{
     padding-left: 16px;
 }
-.right{
-    flex: 1; 
-    padding-right: 8px;
-}
+
 .pr-8{
     padding-right: 8px;
 }
@@ -222,6 +220,9 @@ a:hover{
     text-align: left;
     padding: 4px 16px;
 }
+.flex-direction-column{
+    flex-direction: column;
+}
 .btn-join svg{
     vertical-align: -4px;
 }
@@ -262,6 +263,28 @@ a:hover{
     opacity: 1;
     height: auto;
 }
+.zona-menu-icon{
+    width: 48px;
+    min-width: 48px;
+}
+@media (max-width:320px){
+    .pr-8{
+        padding-left: 8px;
+    }
+    .zona-contacto-oferta{
+        padding-left: 8px;
+    }
+}
+@media (min-width:340px){
+    .flex-direction-row-reverse{
+        flex-direction: row-reverse;
+    }
+    .right{
+        flex: 1; 
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}
 
 @media (orientation: portrait) {
 
@@ -274,7 +297,7 @@ a:hover{
         width: 38px;
         display: flex;
         align-items: center;
-        height: 48px;
+        height: 58px;
         padding-left: 4px;
         border-bottom-right-radius: 8px;
     }
@@ -305,23 +328,27 @@ a:hover{
     .right{
         margin-top: 32px;
     }
-    .buscador-ofertas input{
-        margin-left: 32px;
-    }
 
 }
 @media (orientation: landscape) {
     body{
         padding-top: 32px;
     }
+    .d-landscape-flex{
+        display: flex;
+    }
     .d-landscape-none{
         display: none;
+    }
+    .flex-direction-landscape-column{
+        flex-direction: column;
     }
     .menu-principal{
         margin-left: 8px;
     }
     .right{
         margin-right: 8px;
+        padding-left: 8px;
     }
     .menu-principal > div{
         border: 1px solid #eee;

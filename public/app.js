@@ -96,7 +96,7 @@ function loadMoreJobOffers() {
         }
 
         const contactElement = document.createElement('div');
-        contactElement.classList.add('d-flex', 'gap-32', 'bt-1', 'pt-16');
+        contactElement.classList.add('d-flex', 'gap-32', 'bt-1', 'pt-16','zona-contacto-oferta');
 
         if (jobOffer.whatsapp) {
             const whatsappLink = document.createElement('a');
@@ -262,7 +262,7 @@ function searchJobOffers() {
                 }
                 
                 const contactElement = document.createElement('div');
-                contactElement.classList.add('d-flex', 'gap-32', 'bt-1', 'pt-16');
+                contactElement.classList.add('d-flex', 'gap-32', 'bt-1', 'pt-16','zona-contacto-oferta');
         
                 if (jobOffer.whatsapp) {
                     const whatsappLink = document.createElement('a');
