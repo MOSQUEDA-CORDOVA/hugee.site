@@ -1,6 +1,6 @@
 // Variables para el control de paginación
 let page = 1; // Página inicial
-const perPage = 4; // Cantidad de elementos por página
+const perPage = 400; // Cantidad de elementos por página
 let allJobOffersLoaded = false; // Variable para controlar si se han cargado todas las ofertas disponibles
 let endMessageDisplayed = false; // Variable para controlar si se ha mostrado el mensaje de finalización
 
@@ -151,7 +151,7 @@ function isBottomOfPage() {
 
 // Evento de scroll para cargar más ofertas cuando se llega al final de la página
 window.addEventListener('scroll', () => { 
-    if (isBottomOfPage()) {
+    if (isBottomOfPage() && !allJobOffersLoaded) {
         loadMoreJobOffers();
     }
 });
