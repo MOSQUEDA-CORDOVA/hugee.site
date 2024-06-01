@@ -171,19 +171,30 @@
         --color-text-1: #000;
         --color-text-2: #0000006b;
 
-        --cover-size: 3.8125em;
         --border-radius: 0.6em;
 
         --music-player-height: 22em;
         --offset-cover: 1.60125em;
 
-        width: 20.9375em;
         overflow: hidden;
         user-select: none;
         color: var(--color-text-1);
-        height: var(--music-player-height);
         border-radius: var(--border-radius);
         background-color: var(--color-white);
+        }
+        @media (orientation: portrait) {
+            .music-player{
+                --cover-size: 6em;
+                width: 24em;
+                height: 32em;
+            }
+        }
+        @media (orientation: landscape) {
+            .music-player{
+                --cover-size: 8em;
+                width: 22em;
+                height: var(--music-player-height);
+            }
         }
         .slider {
         --shadow-opacity: 1;
