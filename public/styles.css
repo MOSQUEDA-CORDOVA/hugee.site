@@ -52,9 +52,10 @@ a{
     color: #666;
     text-decoration: none;
 }
-a:hover{
+a:hover,.btn-join:hover svg{
     color: #000;
 }
+
 .card a{
     color: #333;
 }
@@ -234,6 +235,7 @@ a:hover{
 }
 .icon-luz{
     color: #999;
+    transition: 0.2s color ease-in-out;
 }
 .box-sizing-border-box{
     box-sizing: border-box;
@@ -399,8 +401,7 @@ a:hover{
 /*START EFFECTS */
 
 a:hover{
-    font-weight: bold;
-    transition: color 0.5s ease, font-weight 0.3s ease-in-out;
+    transition: color 0.5s ease;
 }
 
 /* END EFFECTS*/
@@ -423,4 +424,16 @@ display: none !important;
 }
 header h2{
     max-width: 650px;
+}
+.script-my-play-list{
+    width: 100%;
+    min-height: 100vh;
+    border: 0;
+    border-radius:8px;
+}
+.freelance-things header{
+    margin-bottom: 32px;
+}
+.freelance-things .title, .freelance-things .subtitle{
+    max-width: 90%;
 }
