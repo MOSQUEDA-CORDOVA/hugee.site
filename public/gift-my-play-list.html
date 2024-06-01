@@ -407,22 +407,22 @@
     <div id="root"></div>
     <script>
         let indexSong = 0;
-let isLocked = false;
-let songsLength = null;
-let selectedSong = null;
-let loadingProgress = 0;
-let songIsPlayed = false;
-let progress_elmnt = null;
-let songName_elmnt = null;
-let sliderImgs_elmnt = null;
-let singerName_elmnt = null;
-let progressBar_elmnt = null;
-let playlistSongs_elmnt = [];
-let loadingProgress_elmnt = null;
-let musicPlayerInfo_elmnt = null;
-let progressBarIsUpdating = false;
-let broadcastGuarantor_elmnt = null;
-const root = document.querySelector("#root");
+        let isLocked = false;
+        let songsLength = null;
+        let selectedSong = null;
+        let loadingProgress = 0;
+        let songIsPlayed = false;
+        let progress_elmnt = null;
+        let songName_elmnt = null;
+        let sliderImgs_elmnt = null;
+        let singerName_elmnt = null;
+        let progressBar_elmnt = null;
+        let playlistSongs_elmnt = [];
+        let loadingProgress_elmnt = null;
+        let musicPlayerInfo_elmnt = null;
+        let progressBarIsUpdating = false;
+        let broadcastGuarantor_elmnt = null;
+        const root = document.querySelector("#root");
 
 function App({ songs }) {
     function handleChangeMusic({ isPrev = false, playListIndex = null }) {
@@ -667,7 +667,7 @@ function Loading() {
     return loadingElement;
 }
 
-fetch("https://gist.githubusercontent.com/abxlfazl/37404417d17230a629683eb3f2f0a88a/raw/366ad64df645e94592847283a306fe2276de458e/music-info.json")
+fetch("my-play-list.json")
     .then((respone) => respone.json())
     .then((result) => {
         const songs = result.songs;
