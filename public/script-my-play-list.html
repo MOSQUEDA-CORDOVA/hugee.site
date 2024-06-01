@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
+    <title>Play List</title>
     <style>
         @font-face {
             font-family: "icomoon";
@@ -682,7 +682,7 @@ function Loading() {
     return loadingElement;
 }
 
-fetch("my-play-list.json")
+fetch("https://hugee.site/my-play-list.json")
     .then((respone) => respone.json())
     .then((result) => {
         const songs = result.songs;
