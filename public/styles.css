@@ -434,6 +434,15 @@ header h2{
 .freelance-things header{
     margin-bottom: 32px;
 }
+.margin-bottom-16px{
+    margin-bottom: 16px;
+}
 .freelance-things .title, .freelance-things .subtitle{
     max-width: 90%;
+}
+.btn-comment{
+    font-size: 18px;
+}
+.btn-black{
+    gap: 16px;
 }
