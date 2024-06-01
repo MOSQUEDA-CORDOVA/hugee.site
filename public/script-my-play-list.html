@@ -682,7 +682,7 @@ function Loading() {
     return loadingElement;
 }
 
-fetch("https://hugee.site/my-play-list.json")
+fetch("my-play-list.json")
     .then((respone) => respone.json())
     .then((result) => {
         const songs = result.songs;
