@@ -175,7 +175,7 @@
 
         --music-player-height: 22em;
         --offset-cover: 1.60125em;
-
+        --cover-size: 6em;
         overflow: hidden;
         user-select: none;
         color: var(--color-text-1);
@@ -184,16 +184,14 @@
         }
         @media (orientation: portrait) {
             .music-player{
-                --cover-size: 6em;
                 width: 24em;
                 height: 32em;
             }
         }
         @media (orientation: landscape) {
             .music-player{
-                --cover-size: 8em;
                 width: 22em;
-                height: var(--music-player-height);
+                height: 22em;
             }
         }
         .slider {
@@ -230,7 +228,7 @@
         transform: translate3d(0, 0, 0);
         }
         .slider__content .button {
-        --size: 2em;
+        --size: 3em;
 
         z-index: 1;
         position: absolute;
