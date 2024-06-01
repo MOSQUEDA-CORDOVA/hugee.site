@@ -65,7 +65,8 @@
 
         html {
         box-sizing: border-box;
-        --duration: 2s;
+
+        --duration: 1s;
         --ease-slider: cubic-bezier(0.4, 0, 0.2, 1);
         --ease-timeline: cubic-bezier(0.71, 0.21, 0.3, 0.95);
         }
@@ -185,13 +186,18 @@
         background-color: var(--color-white);
         }
         .slider {
+        --shadow-opacity: 1;
         flex-wrap: wrap;
         z-index: 0;
         flex-shrink: 0;
         position: relative;
-        
+        transition: var(--duration) height var(--ease-timeline);
         }
-        
+        .slider.resize {
+        --shadow-opacity: 0;
+
+        height: var(--music-player-height);
+        }
         .slider__content__principal{
             display: flex;
         z-index: 0;
@@ -206,14 +212,15 @@
         border-radius: var(--border-radius);
         width: var(--cover-size);
         height: var(--cover-size);
-        transition: 2s height ease-in-out, 2s width ease-in-out;
         }
         .slider.resize .slider__content {
         width: 100%;
         height: 17.8125em;
+        transform: translate3d(0, 0, 0);
         }
         .slider__content .button {
         --size: 2em;
+
         z-index: 1;
         position: absolute;
         width: var(--size);
@@ -244,6 +251,9 @@
         .slider__imgs {
         width: 100%;
         height: 100%;
+        filter: brightness(75%);
+        transform: translate3d(calc(var(--index) * 100%), 0, 0);
+        transition: var(--duration) transform var(--ease-slider);
         }
         .slider__imgs > img {
         pointer-events: none;
@@ -257,6 +267,9 @@
         overflow: hidden;
         align-items: center;
         flex-grow: 1;
+        transform: translate3d(var(--controls-x), 0, 0);
+        animation: var(--controls-animate, "down paused") var(--duration)
+            var(--ease-timeline) forwards;
         }
 
         .slider__switch-button {
@@ -291,6 +304,7 @@
         .music-player__singer-name.animate,
         .music-player__subtitle.animate {
         --subtitle-gap: 1.5625em;
+
         display: flex;
         gap: 0 var(--subtitle-gap);
         animation: subtitle 12s 1.2s linear infinite;
@@ -307,6 +321,9 @@
         transition: var(--duration) width var(--ease-timeline);
         padding: 0.3em 1em;
         background: rgb(0,0,0,0.05);
+        }
+        .slider.resize .progress {
+        width: 100%;
         }
         .progress__wrapper {
         width: 100%;
@@ -448,17 +465,7 @@ function App({ songs }) {
 }
 
 function Slider({ slides, handleChangeMusic }) {
-    function handleResizeSlider({ target }) {
-        if (isLocked) {
-            return;
-        } else if (target.classList.contains("music-player__info")) {
-            this.classList.add("resize");
-            return;
-        } else if (target.classList.contains("music-player__playlist-button")) {
-            this.classList.remove("resize");
-            return;
-        }
-    }
+    
     function handlePlayMusic() {
         if (selectedSong.currentTime === selectedSong.duration) {
             handleChangeMusic({});
@@ -471,7 +478,6 @@ function Slider({ slides, handleChangeMusic }) {
 
     const sliderElement = document.createElement('div');
     sliderElement.className = 'slider center';
-    sliderElement.onclick = handleResizeSlider;
 
     const sliderContentPrincipal = document.createElement('div');
     sliderContentPrincipal.className = 'slider__content__principal';
