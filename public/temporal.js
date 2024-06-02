@@ -70,7 +70,7 @@ function loadMoreJobOffers() {
         const descriptionElement = document.createElement('p');
         const fullDescription = jobOffer.description;
         const shortDescription = fullDescription.length > 100 ? fullDescription.substring(0, 100) + '...' : fullDescription;
-        descriptionElement.textContent = shortDescription;
+        descriptionElement.innerHTML = shortDescription;
         descriptionElement.classList.add('mt-0','pr-8', 'font-weight-landscape-300');
         jobOfferElement.appendChild(descriptionElement);
         if (fullDescription.length > 100) {
@@ -79,10 +79,10 @@ function loadMoreJobOffers() {
             readMoreButton.classList.add('btn-link', 'fw-bold');
             readMoreButton.addEventListener('click', () => {
                 if (readMoreButton.textContent === 'Read more') {
-                    descriptionElement.textContent = fullDescription;
+                    descriptionElement.innerHTML = fullDescription;
                     readMoreButton.textContent = 'Read less';
                 } else {
-                    descriptionElement.textContent = shortDescription;
+                    descriptionElement.innerHTML = shortDescription;
                     readMoreButton.textContent = 'Read more';
                 }
             });
