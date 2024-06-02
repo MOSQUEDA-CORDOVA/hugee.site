@@ -217,7 +217,6 @@ a:hover,.btn-join:hover svg{
 .btn-join{
     border: 1px solid #000;
     border-radius: 8px;
-    margin: 16px 0;
     text-align: left;
     padding: 4px 16px;
 }
@@ -295,13 +294,11 @@ a:hover,.btn-join:hover svg{
         top: 0;
         background-color: #fff;
         z-index: 10000;
-        padding-top: 8px;
-        width: 38px;
         display: flex;
         align-items: center;
         height: 58px;
         padding-left: 4px;
-        border-bottom-right-radius: 8px;
+        border-bottom: 1px solid #000;
     }
    .d-portrait-none{
     display: none;

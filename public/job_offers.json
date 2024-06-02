@@ -1,0 +1,47 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "title": "Desarrollador Frontend",
+        "description": "Buscamos un desarrollador frontend con experiencia en React.",
+        "whatsapp": "+34123456789",
+        "mail": "example@example.com"
+      },
+      {
+        "id": 2,
+        "title": "Diseñador Gráfico",
+        "description": "Necesitamos un diseñador gráfico creativo para proyectos de branding.",
+        "whatsapp": "+34987654321",
+        "mail": "example2@example.com"
+      },
+      {
+        "id": 3,
+        "title": "Desarrollador Frontend",
+        "description": "Buscamos un desarrollador frontend con experiencia en React.",
+        "whatsapp": "+34123456789",
+        "mail": "example@example.com"
+      },
+      {
+        "id": 4,
+        "title": "Diseñador Gráfico",
+        "description": "Necesitamos un diseñador gráfico creativo para proyectos de branding.",
+        "whatsapp": "+34987654321",
+        "mail": "example2@example.com"
+      },
+      {
+        "id": 5,
+        "title": "Desarrollador Frontend",
+        "description": "Buscamos un desarrollador frontend con experiencia en React.",
+        "whatsapp": "+34123456789",
+        "mail": "example@example.com"
+      },
+      {
+        "id": 6,
+        "title": "Diseñador Gráfico",
+        "description": "Necesitamos un diseñador gráfico creativo para proyectos de branding.",
+        "whatsapp": "+34987654321",
+        "mail": "example2@example.com"
+      }
+    ]
+}
+  
