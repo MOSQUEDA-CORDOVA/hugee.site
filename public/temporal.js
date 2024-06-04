@@ -80,7 +80,18 @@ function loadMoreJobOffers() {
             readMoreButton.addEventListener('click', () => {
                 if (readMoreButton.textContent === 'Read more') {
                     descriptionElement.innerHTML = fullDescription;
-                    readMoreButton.textContent = 'Read less';
+
+                    if (jobOffer.hugeeAds) {
+                        const hugeeAdsContainer = document.createElement('div');
+                        hugeeAdsContainer.classList.add('publicidad','hugee-label');
+                        const hugeeAds = document.createElement('a');
+                        hugeeAds.href = `sponsor.html`;
+                        hugeeAds.textContent = jobOffer.hugeeAds;
+                        hugeeAds.classList.add('btn-join', 'hugee-anuncio');
+                        hugeeAdsContainer.appendChild(hugeeAds);
+                        descriptionElement.appendChild(hugeeAdsContainer);
+                    }
+
                 } else {
                     descriptionElement.innerHTML = shortDescription;
                     readMoreButton.textContent = 'Read more';
@@ -90,7 +101,7 @@ function loadMoreJobOffers() {
         }
 
         const contactElement = document.createElement('div');
-        contactElement.classList.add('d-flex', 'gap-32', 'bt-1', 'pt-16','zona-contacto-oferta');
+        contactElement.classList.add('d-flex', 'gap-32', 'pt-16','zona-contacto-oferta');
 
         if (jobOffer.whatsapp) {
             const whatsappLink = document.createElement('a');
@@ -103,11 +114,15 @@ function loadMoreJobOffers() {
         if (jobOffer.mail) {
             const mailLink = document.createElement('a');
             mailLink.href = `mailto:${jobOffer.mail}`;
+            contactElement.classList.add('d-flex', 'gap-32', 'pt-16','zona-contacto-oferta');
             mailLink.textContent = '✉️ Mail';
             contactElement.appendChild(mailLink);
         }
-
         jobOfferElement.appendChild(contactElement);
+
+        
+
+        
 
         // Agregar la oferta de empleo al contenedor
         jobOffersContainer.appendChild(jobOfferElement);
@@ -127,4 +142,6 @@ function loadMoreJobOffers() {
 // Carga las primeras ofertas al cargar la página
 window.addEventListener('load', () => {
     loadMoreJobOffers();
+
 });
+

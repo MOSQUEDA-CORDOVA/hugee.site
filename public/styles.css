@@ -18,7 +18,7 @@ h1{
     margin-bottom: 0;
 }
 h2{
-    margin: 0 0 32px 0;
+    margin: 0;
 }
 body, input, button{
   font-family: "Jost", sans-serif;
@@ -113,12 +113,7 @@ a:hover,.btn-join:hover svg{
 .pt-16{
     padding-top: 16px;
 }
-.publicidad{
-    background-color: #eee;
-    text-align: center;
-    min-height: 50px;
-    margin-top: 16px;
-}
+
 .fw-bold{
     font-weight: bold;
 }
@@ -232,6 +227,9 @@ a:hover,.btn-join:hover svg{
 .text-luz{
     color: #666;
 }
+.text-left{
+    text-align: left;
+}
 .icon-luz{
     color: #999;
     transition: 0.2s color ease-in-out;
@@ -307,7 +305,7 @@ a:hover,.btn-join:hover svg{
    .menu-principal > div{
     position: fixed;
     top: 0px;
-    padding: 8px;
+    padding: 94px 8px 8px 8px;
     background-color: #fff;
     width: 100%;
     height: 100%;
@@ -327,7 +325,10 @@ a:hover,.btn-join:hover svg{
     .right{
         margin-top: 32px;
     }
-
+    .hugee-bottom{
+        left: 0;
+        padding: 0 8px;
+    }
 }
 @media (orientation: landscape) {
     body{
@@ -404,16 +405,24 @@ a:hover{
 /* END EFFECTS*/
 
 /* el nombre correcto de la etqieuta es adsbygoogle */
-.publicidad {margin-bottom: 50px;}
-.publicidad::before {
-content: "Advertisement";
+.publicidad {margin-bottom: 16px;}
+.hugee-label::before {
+content: "Advertisement:";
 display: block;
-text-align: center;
-font-weight: bold;
-margin-bottom: 10px;}
+font-size: 16px;
+margin-bottom: 4px;
+color: #aaa;
 
-ins.publicidad[data-ad-status='unfilled'] {
-display: none !important;
+}
+.publicidad{
+    min-height: 32px;
+    margin-top: 16px;
+}
+.hugee-anuncio{
+    display: block;
+    border-radius: 4px;
+    padding: 8px 16px;
+    border: 1px solid #000;
 }
 
 .btn-link{
@@ -442,4 +451,24 @@ header h2{
 }
 .btn-black{
     gap: 16px;
+}
+.hugee-bottom{
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999;
+    margin-bottom: 0;
+}
+
+footer{
+    margin-bottom: 280px;
+}
+.margin-top-128px{
+    margin-top: 128px;
+}
+.max-w-720{
+    max-width: 720px !important;
+}
+.margin-bottom-128px{
+    margin-bottom: 128px;
 }
