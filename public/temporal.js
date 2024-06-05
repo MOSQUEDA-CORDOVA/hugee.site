@@ -28,6 +28,11 @@ function loadMoreJobOffers() {
         const titleElement = document.createElement('h3');
         titleElement.classList.add('text-black', 'm-0');
         titleElement.textContent = jobOffer.title;
+        const publicationDate = document.createElement('div');
+        publicationDate.classList.add('publication-date');
+        publicationDate.textContent = jobOffer.publicationDate;
+        titleElement.appendChild(publicationDate);
+
         cardHeader.appendChild(titleElement);
 
 
@@ -66,6 +71,7 @@ function loadMoreJobOffers() {
         // Añadir el div de acciones al elemento de la oferta de empleo
         cardHeader.appendChild(accionesDiv);
         jobOfferElement.appendChild(cardHeader);
+        
 
         const descriptionElement = document.createElement('p');
         const fullDescription = jobOffer.description;

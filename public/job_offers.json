@@ -2,53 +2,99 @@
     "data": [
       {
         "id": 1,
+        "title": "iOS Developer",
+        "description": "<b>Client:</b> Taco Bell in CA (Remote position)<br><b>Location:</b> Remote<br><b>Duration:</b> 6 months. Extensions possible<br><b>Interview:</b> 1-2 video interviews<br><br><b>Must Have:</b><br>- Must be senior<br>- Strong Swift experience<br>- MVVM<br>- Any published apps and portfolio would be helpful<br>- Able to work PST hours<br><br><b>Details:</b><br>- Candidates in PST time zone preferred<br>- Visa: USC, GC, GCEAD ONLY<br>- Need good communication skills",
+        "whatsapp": "",
+        "mail": "vikas@vrtekconsulting.com",
+        "hugeeAds": "💡 This is the perfect place for freelancers to see you!",
+        "publicationDate": ""
+      },
+      {
+        "id": 2,
+        "title": "Database Administrator – SQL Server (Azure), Remote",
+        "description": "<b>Location:</b> Remote<br><b>Duration:</b> 6 Months Contract<br><br><b>Skills Required:</b><br>- Ability to work in a dynamic environment with changing requirements<br>- Good communication and presentation skills<br>- Working experience as a SQL Server database administrator in Azure<br>- Working experience creating and supporting Data Factory data pipelines, DataBricks workspaces, and security groups in Azure.<br>- Working experience using DevOps CI/CD in Azure.<br>- Review and rewrite high performance SQL queries using Joins, Cross Apply, Aggregate Queries, Merge, Pivot<br>- Migrate Stored Procedures, Functions and Views<br>- Review database designs to identify proper indexing and constraints<br>- Perform SQL query tuning and performance optimization on complex inefficient queries<br>- Provide guidance in the use of table variable, temporary table, CTE appropriately to deal with large datasets<br>- Analyze complex queries for any deadlock resulting due to conflicts<br>- Collaborate with other DBAs on database design and performance enhancements<br>- Debug existing code and troubleshoot for issues<br>- Keep up to date with the latest database features, techniques, and technologies.<br>- Support current business applications including the implementation of bug fixes as needed<br>- Able to multi-task and adapt to shifting priorities<br>- Able to meet deadlines set in project planning<br>- Effectively communicate progress through the project execution phase<br>- Follow industry and company standard coding practices<br>- Produce technical and application documentation<br>- Test database process for future enhancements and bug fixes<br>- Assist support analysts and developers with issues they are unable to resolve.<br>- Ensure customer satisfaction by meeting customer needs in a courteous and timely manner<br><br><b>Roles & Responsibilities:</b><br>- Work with a highly dynamic team focused towards Digital Transformation<br>- Understand the domain and business processes to successfully perform SQL Server database administration tasks (project or maintenance related) in Azure.<br>- Provide work status and coordinate with other Database administrators and developers.<br>- Manage customer deliverables and regularly report the status via Weekly/Monthly reviews",
+        "whatsapp": "",
+        "mail": "pratik@acetechnologies.com",
+        "hugeeAds": "💡 This is the perfect place for freelancers to see you!",
+        "publicationDate": ""
+      },
+      {
+        "id": 3,
+        "title": "Marketing Content Developers",
+        "description": "<b>Job Summary:</b><br>We are seeking a skilled Marketing Content Developers to join our team. As a Developer, you will be responsible for creating high-quality, engaging content that drives results for our business, technical as well as marketing campaigns.<br><br><b>Responsibilities:</b><br>- Write and edit business, technical and marketing content across various channels, including social media, email, blog posts, and landing pages<br>- Develop content that is optimized for search engines and drives conversions<br>- Collaborate with designers, product marketers, and other stakeholders to ensure content is aligned with company goals<br>- Stay up-to-date with industry trends and developments to ensure content is fresh and relevant<br>- Conduct research to stay informed about our target audience and their needs<br>- Use analytics tools to track content performance and make data-driven decisions<br><br><b>Requirements:</b><br>- 1+ years of experience in content writing or marketing<br>- Portfolio that showcases your writing skills and experience<br>- Strong understanding of Business and marketing principles and practices<br>- Excellent writing, editing, and proofreading skills<br>- Ability to work independently and collaboratively as part of a team<br>- Familiarity with content management systems and analytics tools<br>- Bachelor's degree in English, Business, Marketing, or a related field<br><br><b>What We Offer:</b><br>- Competitive Compensations and benefits package<br>- Opportunity to work with a fast-growing company and make a real impact<br>- Collaborative and dynamic work environment<br>- Professional development opportunities to help you grow your skills<br>- Flexible work arrangements as we are a remote company.",
+        "whatsapp": "",
+        "mail": "ourpeople@copyhouseinternational",
+        "hugeeAds": "💡 This is the perfect place for freelancers to see you!",
+        "publicationDate": ""
+      },
+      {
+        "id": 4,
         "title": "Senior Product Designer ",
         "description": "<b>About the Role:</b><br> As a Senior Product Designer/Senior UX/UI Designer, you will take the lead in designing that cutting-edge e-commerce platform from the ground up. You will be responsible for delivering wireframes, developing UX/UI design, and creating prototypes for three key personas: Sellers, Users/Buyers, and Admin Dashboard Users.<br><br><b>Key Responsibilities:</b> <br>Experience: 4+ years<br>Wireframing & Prototyping. <br>Develop comprehensive wireframes and high-fidelity prototypes to communicate design ideas and interactions. <br>Create user flows, journey maps, and personas to ensure a user-centered design approach.",
         "whatsapp": "",
         "mail": "pm.omarza@gmail.com",
-        "hugeeAds": "💡 This is the perfect place for freelancers to see you!"
-      },
-      {
-        "id": 2,
-        "title": "UX/UI Design",
-        "description": "Design intuitive and visually appealing interfaces for our e-commerce platform.<br>Conduct user research, usability testing, and gather feedback to continuously improve the user experience.<br>Apply industry best practices and emerging trends to design decisions. <br><br><b>Product Development:</b>Collaborate closely with product managers, developers, and stakeholders to translate business goals into effective design solutions. Ensure consistency in design language across all touchpoints of the product.<br><br><b>Stakeholder Management:</b><br>Present design concepts and prototypes to stakeholders, gather feedback, and iterate accordingly.>br>Work with cross-functional teams to understand user needs and business requirements.<br><br><b>Experience:</b><br>5+ years of professional experience in UX/UI design, preferably within startup environments and e-commerce platforms.<br>Proven experience in designing for multiple personas (Sellers, Users/Buyers, Admins).<br><br><b>Skills:</b><br>Proficiency in design tools such as Sketch, Figma, Adobe XD, or similar.<br>Strong understanding of user-centered design principles and best practices.<br>Excellent communication and presentation skills.<br>Ability to work independently and manage multiple projects simultaneously.<br><br><b>Preferred:</b><br>Experience with end-to-end product design and development.<br>Previous experience in designing admin dashboards and e-commerce solutions.<br><br><b>How to Apply:</b> Please send your resume, portfolio, and a brief cover letter detailing your relevant experience.",
-        "whatsapp": "",
-        "mail": "pm.omarza@gmail.com"
-      },
-      {
-        "id": 3,
-        "title": "Business Developer",
-        "description": "Company: Tech Zavvy<br>Location: Remote <br>Working Hours: 5-6 hours per day (Flexible)<br>Experience: 1-2 years in a similar role<br>Trial Period: 10 days required for final selection.<br><br><b>Job Summary:</b>The primary role of the Business Developer is to drive sales by generating leads of potential clients. This position is ideal for a self-starter with a proven track record in business development and sales. The successful candidate will have the flexibility to work remotely and the opportunity to contribute to the growth and success of Techzavvy.<br><br><b>Requirements:</b><br>1-2 years of experience in business development, sales, or a related field<br>Proven track record of generating leads and achieving sales targets<br>Strong communication, negotiation, and interpersonal skills<br>Ability to work independently and as part of a team<br>Proficiency in using CRM software and other sales tools<br>Excellent organizational and time management skills<br>Ability to adapt to a flexible working schedule<br><br><b>Benefits:</b><br>Flexible working hours<br>Remote work opportunity<br>Competitive salary and commission structure<br>Professional development and growth opportunities<br>Collaborative and supportive team environment",
-        "whatsapp": "",
-        "mail": "samrtariq800@gmail.com"
-      },
-      {
-        "id": 4,
-        "title": "Salesforce Business Analyst  ",
-        "description": "Urgently Hiring For<br>Salesforce Business Analyst  <br>Experience: 6 - 8 Years<br>Location: Remote<br><br><b>Responsibilities:</b><br>- Collaborate with stakeholders to gather and analyze business requirements related to Salesforce platform. <br>- Translate business requirements into technical specifications for Salesforce configuration and customization. <br>- Configure Salesforce to meet business needs, including but not limited to custom objects, fields, workflows, and validation rules. <br>- Perform data analysis and data migrations as needed to support Salesforce initiatives. - Conduct user training sessions and provide ongoing support to Salesforce users. <br>- Collaborate with developers and administrators to implement and maintain integrations between Salesforce and other systems. <br>- Stay current with Salesforce releases and new features to advise stakeholders on best practices and optimizations. <br>- Participate in the testing and quality assurance processes for Salesforce enhancements and releases. <br><br><b>Qualifications: <b><br>- Bachelor’s degree in business administration, Information Systems, or related field. - 6 to 8 years of experience as a SF <br>- Business Analyst, with a focus on Salesforce implementations. <br>- Salesforce Administrator certification is preferred. <br>- Strong analytical and problem-solving skills. <br>- Excellent communication and interpersonal skills, with the ability to effectively engage with stakeholders at all levels. <br>- Experience with Agile methodologies is a plus. ",
-        "whatsapp": "",
-        "mail": "jbhatia@forcecraver.com"
+        "hugeeAds": "💡 This is the perfect place for freelancers to see you!",
+        "publicationDate": "Publication Date: 02/06/2024"
       },
       {
         "id": 5,
-        "title": "PHP Engineer",
-        "description": "Location : Remote<br>$45/hr on C2C<br>Long Term<br>At least 10+ year experience needed<br><br><b>Qualifications</b><br>The ideal candidate is a highly resourceful and innovative developer with extensive experience in the layout, design and coding of websites specifically in PHP format<br>You must also possess a strong knowledge of web application development using PHP programming language and MySQL Server databases<br>7+ years' of experience in web development and software design<br>Expertise in front-end technologies (HTML, JavaScript, CSS), PHP frameworks, and MySQL databases<br><br><b>Qualifications</b><br>Expertise in front-end technologies (HTML, JavaScript, CSS), PHP frameworks, and MySQL database<br>Hands on PHP (CodeIgniter and/or Laravel)<br><br><b>Responsibilities </b><br>Perform a mix of maintenance, enhancements, and new development as required<br>Work in a data analyst role and with business intelligence applications<br>Document features, technical specifications & infrastructure Responsibilities<br>Work cross-functionally to convert business needs into technical specifications<br>Hands on PHP (CodeIgniter and/or Laravel)        ",
+        "title": "UX/UI Design",
+        "description": "Design intuitive and visually appealing interfaces for our e-commerce platform.<br>Conduct user research, usability testing, and gather feedback to continuously improve the user experience.<br>Apply industry best practices and emerging trends to design decisions. <br><br><b>Product Development:</b>Collaborate closely with product managers, developers, and stakeholders to translate business goals into effective design solutions. Ensure consistency in design language across all touchpoints of the product.<br><br><b>Stakeholder Management:</b><br>Present design concepts and prototypes to stakeholders, gather feedback, and iterate accordingly.>br>Work with cross-functional teams to understand user needs and business requirements.<br><br><b>Experience:</b><br>5+ years of professional experience in UX/UI design, preferably within startup environments and e-commerce platforms.<br>Proven experience in designing for multiple personas (Sellers, Users/Buyers, Admins).<br><br><b>Skills:</b><br>Proficiency in design tools such as Sketch, Figma, Adobe XD, or similar.<br>Strong understanding of user-centered design principles and best practices.<br>Excellent communication and presentation skills.<br>Ability to work independently and manage multiple projects simultaneously.<br><br><b>Preferred:</b><br>Experience with end-to-end product design and development.<br>Previous experience in designing admin dashboards and e-commerce solutions.<br><br><b>How to Apply:</b> Please send your resume, portfolio, and a brief cover letter detailing your relevant experience.",
         "whatsapp": "",
-        "mail": "harsha@mavengroup.in"
+        "mail": "pm.omarza@gmail.com",
+        "publicationDate": "Publication Date: 02/06/2024",
+        "hugeeAds": "💡 This is the perfect place for freelancers to see you!"
+
       },
       {
         "id": 6,
+        "title": "Business Developer",
+        "description": "Company: Tech Zavvy<br>Location: Remote <br>Working Hours: 5-6 hours per day (Flexible)<br>Experience: 1-2 years in a similar role<br>Trial Period: 10 days required for final selection.<br><br><b>Job Summary:</b>The primary role of the Business Developer is to drive sales by generating leads of potential clients. This position is ideal for a self-starter with a proven track record in business development and sales. The successful candidate will have the flexibility to work remotely and the opportunity to contribute to the growth and success of Techzavvy.<br><br><b>Requirements:</b><br>1-2 years of experience in business development, sales, or a related field<br>Proven track record of generating leads and achieving sales targets<br>Strong communication, negotiation, and interpersonal skills<br>Ability to work independently and as part of a team<br>Proficiency in using CRM software and other sales tools<br>Excellent organizational and time management skills<br>Ability to adapt to a flexible working schedule<br><br><b>Benefits:</b><br>Flexible working hours<br>Remote work opportunity<br>Competitive salary and commission structure<br>Professional development and growth opportunities<br>Collaborative and supportive team environment",
+        "whatsapp": "",
+        "mail": "samrtariq800@gmail.com",
+        "hugeeAds": "💡 This is the perfect place for freelancers to see you!",
+        "publicationDate": "Publication Date: 02/06/2024"
+
+      },
+      {
+        "id": 7,
+        "title": "Salesforce Business Analyst  ",
+        "description": "Urgently Hiring For<br>Salesforce Business Analyst  <br>Experience: 6 - 8 Years<br>Location: Remote<br><br><b>Responsibilities:</b><br>- Collaborate with stakeholders to gather and analyze business requirements related to Salesforce platform. <br>- Translate business requirements into technical specifications for Salesforce configuration and customization. <br>- Configure Salesforce to meet business needs, including but not limited to custom objects, fields, workflows, and validation rules. <br>- Perform data analysis and data migrations as needed to support Salesforce initiatives. - Conduct user training sessions and provide ongoing support to Salesforce users. <br>- Collaborate with developers and administrators to implement and maintain integrations between Salesforce and other systems. <br>- Stay current with Salesforce releases and new features to advise stakeholders on best practices and optimizations. <br>- Participate in the testing and quality assurance processes for Salesforce enhancements and releases. <br><br><b>Qualifications: </b><br>- Bachelor’s degree in business administration, Information Systems, or related field. - 6 to 8 years of experience as a SF <br>- Business Analyst, with a focus on Salesforce implementations. <br>- Salesforce Administrator certification is preferred. <br>- Strong analytical and problem-solving skills. <br>- Excellent communication and interpersonal skills, with the ability to effectively engage with stakeholders at all levels. <br>- Experience with Agile methodologies is a plus. ",
+        "whatsapp": "",
+        "mail": "jbhatia@forcecraver.com",
+        "hugeeAds": "💡 This is the perfect place for freelancers to see you!",
+        "publicationDate": "Publication Date: 02/06/2024"
+
+      },
+      {
+        "id": 8,
+        "title": "PHP Engineer",
+        "description": "Location : Remote<br>$45/hr on C2C<br>Long Term<br>At least 10+ year experience needed<br><br><b>Qualifications</b><br>The ideal candidate is a highly resourceful and innovative developer with extensive experience in the layout, design and coding of websites specifically in PHP format<br>You must also possess a strong knowledge of web application development using PHP programming language and MySQL Server databases<br>7+ years' of experience in web development and software design<br>Expertise in front-end technologies (HTML, JavaScript, CSS), PHP frameworks, and MySQL databases<br><br><b>Qualifications</b><br>Expertise in front-end technologies (HTML, JavaScript, CSS), PHP frameworks, and MySQL database<br>Hands on PHP (CodeIgniter and/or Laravel)<br><br><b>Responsibilities </b><br>Perform a mix of maintenance, enhancements, and new development as required<br>Work in a data analyst role and with business intelligence applications<br>Document features, technical specifications & infrastructure Responsibilities<br>Work cross-functionally to convert business needs into technical specifications<br>Hands on PHP (CodeIgniter and/or Laravel)        ",
+        "whatsapp": "",
+        "mail": "harsha@mavengroup.in",
+        "hugeeAds": "💡 This is the perfect place for freelancers to see you!",
+        "publicationDate": "Publication Date: 02/06/2024"
+
+      },
+      {
+        "id": 9,
         "title": "Developer",
         "description": "Join Our Tech Revolution! 🌟<br>Are you a MERN Stack Developer ready to make a mark? <br><br>We’re on a mission to innovate and we need YOU to help us get there!<br><br>Job Role: MERN Stack Developer<br>Experience: 4+ Years <br>Work Mode: Remote <br><br><b>What we offer:</b><br>✅ Competitive salary<br>🌐 Remote work flexibility<br>📚 Continuous learning opportunities<br><br>Ready to code your way into the future?         ",
         "whatsapp": "",
-        "mail": "jobs@iqudtek.com        "
+        "mail": "jobs@iqudtek.com        ",
+        "hugeeAds": "💡 This is the perfect place for freelancers to see you!",
+        "publicationDate": "Publication Date: 02/06/2024"
+
       },
       {
         "id": 7,
         "title": "Full Stack Development",
         "description": "En Lexim Solutions nos encontramos en la búsqueda de un Full Stack Development con al menos 2 años de experiencia, para sumarse al equipo de trabajo de uno de nuestros clientes dedicado al rubro bancario y financiero, quien forme parte de este debe estar orientado al cumplimiento de objetivos y contar con buen manejo de las relaciones interpersonales. <br><br> <b>Requisitos:</b> Ingenieria en sistemas, Conocimientos sólidos de las tecnologías de integración de SAP, como SAP PI/PO (Process Integration/Process Orchestration) y SAP Gateway,   Capacidad analítica y de resolución de problemas para identificar y resolver problemas técnicos, Excelentes dotes de comunicación y colaboración para trabajar eficazmente con equipos interfuncionales y partes interesadas, Certificacion SAP, Inglés Avanzado.",
         "whatsapp": "",
-        "mail": "reclutamiento@lexim.solutions"
+        "mail": "reclutamiento@lexim.solutions",
+        "hugeeAds": "💡 This is the perfect place for freelancers to see you!",
+        "publicationDate": "Publication Date: 02/06/2024"
+
       }
     ]
 }
