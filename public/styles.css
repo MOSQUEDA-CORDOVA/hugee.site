@@ -488,3 +488,7 @@ footer{
     font-weight: 400;
     margin: 4px 0 16px 0;
 }
+.card b, .read-more{
+    font-weight: 400;
+    color: #000;
+}

@@ -82,7 +82,7 @@ function loadMoreJobOffers() {
         if (fullDescription.length > 100) {
             const readMoreButton = document.createElement('span');
             readMoreButton.textContent = 'Read more';
-            readMoreButton.classList.add('btn-link', 'fw-bold');
+            readMoreButton.classList.add('btn-link', 'fw-bold', 'read-more');
             readMoreButton.addEventListener('click', () => {
                 if (readMoreButton.textContent === 'Read more') {
                     descriptionElement.innerHTML = fullDescription;
