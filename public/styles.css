@@ -287,6 +287,15 @@ a:hover,.btn-join:hover svg{
 
 @media (orientation: portrait) {
 
+    .hugee-bottom{
+        display: flex;
+        width: 100%;
+        padding: 8px;
+        justify-content: center;
+        border-top: 1px solid #eee;
+        background-color: #fff;
+    }
+
     .sidebar-accion{
         position: sticky;
         top: 0;
@@ -325,12 +334,22 @@ a:hover,.btn-join:hover svg{
     .right{
         margin-top: 32px;
     }
-    .hugee-bottom{
-        left: 0;
-        padding: 0 8px;
-    }
+
 }
 @media (orientation: landscape) {
+    .btn-landscape-join{
+        border: 1px solid #000;
+    border-radius: 8px;
+    text-align: left;
+    padding: 4px 16px;
+    margin-bottom: 16px;
+    }
+    .hugee-bottom {
+        padding: 8px 0;
+    }
+    .hugee-bottom a{
+        background-color: #fff;
+    }
     .card{
         border:1px solid #eee;
         padding: 32px 16px 16px 32px;
@@ -461,7 +480,6 @@ header h2{
 .hugee-bottom{
     position: fixed;
     bottom: 0;
-    background-color: #fff;
     z-index: 999;
     margin-bottom: 0;
 }
@@ -492,3 +510,4 @@ footer{
     font-weight: 400;
     color: #000;
 }
+
